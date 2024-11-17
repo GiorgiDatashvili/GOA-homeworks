@@ -11,7 +11,6 @@ for i in range(len(numbers)):
     if numbers[i] % 5 == 0 or numbers[i] % 3 == 0:
         print(numbers[i])
 
-
 rows = 4
 for i in range(rows):
     print(" " * i, end="")
