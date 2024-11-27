@@ -1,0 +1,25 @@
+.first {
+    width: 14%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.second {
+    width: 14%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third {
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+.fourth{
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+}
+.center {
+    margin: auto;
+  }

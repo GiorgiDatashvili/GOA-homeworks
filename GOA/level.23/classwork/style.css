@@ -1,0 +1,19 @@
+body{
+    background-color:brown;
+}
+button{
+    border-radius:5px;
+    background-color: black;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+div{
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: larger;
+}
