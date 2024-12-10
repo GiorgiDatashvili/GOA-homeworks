@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(191, 197, 207);
+}
+
+.p {
+    font-size: larger;
+    color: hsla(0, 0%, 0%, 0.9);
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.fonts {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
