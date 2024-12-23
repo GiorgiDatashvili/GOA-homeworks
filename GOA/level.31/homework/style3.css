@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+div{
+    color: #f3922b;
+    font-family: serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px;
+}

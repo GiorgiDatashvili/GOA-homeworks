@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.g-1 {
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+.g-2 {
+    text-align: center;
+    font-size: larger;
+    color: white;
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Arial_ge";
+    src: url("./fonts/arial_geo_[FONTS.GE]/arial_geo.ttf");
+}
+
+@font-face {
+    font-family: "Nino-Mtavruli";
+    src: url("./fonts/bpg_nino_mtavruli_normal_[FONTS.GE]/bpg_nino_mtavruli_normal.ttf");
+}
+
+body {
+    font-family: "Arial_ge";
+
+}
+
+.qartli {
+    text-align: center;
+    font-size: larger;
+
+}
+
+.kaxeti {
+    font-family: "Nino-Mtavruli";
+    font-size: larger;
+    text-align: center;
+}
