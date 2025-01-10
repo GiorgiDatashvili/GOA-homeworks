@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mercedes-Benz_Logo_2010.svg/1920px-Mercedes-Benz_Logo_2010.svg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    text-align: center;
+}

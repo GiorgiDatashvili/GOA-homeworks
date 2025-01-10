@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://www.hollywoodreporter.com/wp-content/uploads/2023/11/GettyImages-803015182-H-2023.jpg?w=1296&h=730&crop=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: sans-serif;
+}

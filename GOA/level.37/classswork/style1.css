@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Serif Text", serif;
+    background-image: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(16, 114, 196, 1) 40%, rgba(12, 139, 211, 1) 55%, rgba(0, 212, 255, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color: rgba(2, 0, 36, 1);
+    font-weight: 700;
+}
+
+.card {
+    width: 300px;
+    background-color: cyan;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color:black;
+    font-weight: 700;
+}

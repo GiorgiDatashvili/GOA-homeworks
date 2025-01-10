@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(22deg, rgba(196,94,16,1) 22%, rgba(237,167,61,1) 89%);
+    text-align: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+img{
+    margin: 50px;
+}

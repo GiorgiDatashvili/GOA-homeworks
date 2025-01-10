@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://paraleli.ge/wp-content/uploads/2021/04/%E1%83%9B%E1%83%AC%E1%83%95%E1%83%90%E1%83%9C%E1%83%94-%E1%83%99%E1%83%9D%E1%83%93%E1%83%90%E1%83%9A%E1%83%90-Picus-viridis-European-green-woodpecker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}

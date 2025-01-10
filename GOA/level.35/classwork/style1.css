@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1920px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg), url(https://www.worldanimalprotection.ca/cdn-cgi/image/width=1280,format=auto/siteassets/shutterstock_2461984615.jpg);
+    background-size: 50% 100%, 50% 100%;
+    height: 100%;
+    background-position: left , right ;
+    background-repeat: no-repeat, no-repeat;
+    font-family: sans-serif;
+    height: 960px;
+}
+
+.container {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Okonjima_Lioness.jpg/1024px-Okonjima_Lioness.jpg);
+    background-size: cover;
+    color: white;
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+}
