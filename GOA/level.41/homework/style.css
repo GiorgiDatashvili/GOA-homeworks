@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(354deg, rgba(160,28,166,1) 35%, rgba(228,41,98,1) 68%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+}
+div{
+    width: 700px;
+    margin: 350px auto;
+    height: 250px;
+    padding-top: 20px;
+    background-color: darkcyan;
+    text-align: center;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(255, 255, 255);
+
+}
+h1{
+    padding-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+    background-color: darkcyan;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+th,td{
+    border: none;
+}

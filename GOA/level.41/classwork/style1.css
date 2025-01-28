@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    border-collapse: collapse;
+    width: 40%;
+}
+th{
+    text-align: start;
+}
+
+tr:first-child{
+    background-color: purple;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: antiquewhite;
+    color: black;
+}
+tr:not(:first-child):hover{
+    background-color: rgb(187, 122, 248);
+}
+input[type="text"]{
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 15px;
+    background-image: linear-gradient(to top,white,rgb(173, 172, 172) );
+    color: black;
+}
+input[type="text"]:focus{
+    border: 1px solid rgb(83, 161, 250);
+    background-image: linear-gradient(to bottom,white,rgb(83,161,250));
+}
