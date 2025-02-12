@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent{
+    display: flex;
+    justify-content: end;
+    
+}
+#div1{
+    border:solid orange 2px;
+    width:200px;
+    height:200px;
+    margin-right: auto;
+    
+}
+#div2{
+    border:solid orange 2px;
+    width:200px;
+    height:200px;
+}
+#div3{
+    border:solid green 2px;
+    width:200px;
+    height:200px;
+}

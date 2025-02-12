@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#div1{
+    border:solid green 2px;
+    width:200px;
+    height:200px;
+    
+}
+#div2{
+    border:solid green 2px;
+    width:200px;
+    height:200px;
+}
+#maindiv{
+    display: flex;
+    flex-direction: row;
+}
+p{
+    text-align: center;
+    padding: 70px;
+    font-size: larger;
+}

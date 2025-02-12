@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+#row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div1 {
+    border: solid 2px green;
+    width: 200px;
+    height: 200px;
+}
+
+#div2 {
+    border: solid 2px green;
+    width: 200px;
+    height: 200px;
+}
+
+#row2 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#div3 {
+    border: solid 2px red;
+    width: 200px;
+    height: 200px;
+}
+
+#div4 {
+    border: solid 2px red;
+    width: 200px;
+    height: 200px;
+}
