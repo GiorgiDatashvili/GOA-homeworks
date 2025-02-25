@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+body{
+  background-color:#D95362;
+}
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.div1{
+    width: 80px;
+    height: 220px;
+    background-color: #FDFFE9;
+    margin-left:40px;
+  
+}
+.div2{
+    width: 51px;
+    height: 51px;
+    background-color: #FDFFE9;
+    border-radius: 50%;
+    margin:34px;
+    margin-left: 20px
+}
