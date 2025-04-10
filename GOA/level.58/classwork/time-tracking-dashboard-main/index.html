@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Tracking Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: hsl(226, 43%, 10%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .profile-card {
+      background-color: hsl(235, 46%, 20%);
+      border-radius: 15px;
+      overflow: hidden;
+      grid-row: span 2;
+    }
+
+    .profile-top {
+      background-color: hsl(246, 80%, 60%);
+      padding: 30px;
+      border-radius: 15px 15px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .profile-top img {
+      border: 3px solid white;
+      border-radius: 50%;
+      width: 60px;
+      margin-bottom: 30px;
+    }
+
+    .profile-top p {
+      font-size: 14px;
+      color: hsl(236, 100%, 87%);
+    }
+
+    .profile-top h1 {
+      font-weight: 300;
+      font-size: 24px;
+    }
+
+    .profile-bottom {
+      padding: 20px 30px;
+    }
+
+    .profile-bottom p {
+      margin: 10px 0;
+      color: hsl(236, 100%, 87%);
+      cursor: pointer;
+    }
+
+    .profile-bottom p.active {
+      color: white;
+    }
+
+    .card {
+      position: relative;
+      background-color: hsl(235, 46%, 20%);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card .background {
+      height: 50px;
+    }
+
+    .card .content {
+      background-color: hsl(235, 46%, 20%);
+      padding: 20px;
+      border-radius: 0 0 15px 15px;
+      position: relative;
+      top: -10px;
+    }
+
+    .content h3 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .content h2 {
+      margin: 10px 0;
+      font-size: 32px;
+      font-weight: 300;
+    }
+
+    .content p {
+      color: hsl(236, 100%, 87%);
+      font-size: 12px;
+    }
+
+
+    .work .background { background-color: hsl(15, 100%, 70%); }
+    .play .background { background-color: hsl(195, 74%, 62%); }
+    .study .background { background-color: hsl(348, 100%, 68%); }
+    .exercise .background { background-color: hsl(145, 58%, 55%); }
+    .social .background { background-color: hsl(264, 64%, 52%); }
+    .self-care .background { background-color: hsl(43, 84%, 65%); }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="profile-card">
+      <div class="profile-top">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson" />
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+      <div class="profile-bottom">
+        <p class="active">Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
+      </div>
+    </div>
+
+    <div class="card work">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Work <span>•••</span></h3>
+        <h2>32hrs</h2>
+        <p>Last Week - 36hrs</p>
+      </div>
+    </div>
+
+    <div class="card play">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Play <span>•••</span></h3>
+        <h2>10hrs</h2>
+        <p>Last Week - 8hrs</p>
+      </div>
+    </div>
+
+    <div class="card study">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Study <span>•••</span></h3>
+        <h2>4hrs</h2>
+        <p>Last Week - 7hrs</p>
+      </div>
+    </div>
+
+    <div class="card exercise">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Exercise <span>•••</span></h3>
+        <h2>4hrs</h2>
+        <p>Last Week - 5hrs</p>
+      </div>
+    </div>
+
+    <div class="card social">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Social <span>•••</span></h3>
+        <h2>5hrs</h2>
+        <p>Last Week - 10hrs</p>
+      </div>
+    </div>
+
+    <div class="card self-care">
+      <div class="background"></div>
+      <div class="content">
+        <h3>Self Care <span>•••</span></h3>
+        <h2>2hrs</h2>
+        <p>Last Week - 2hrs</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

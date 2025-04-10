@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crowdfund Product Page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to top, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.35) 90%),
+                  url("images/image-hero-desktop.jpg") no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 52px 165px 0;
+      color: white;
+    }
+
+    header img {
+      height: 20px;
+    }
+
+    header ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: -100px auto 0;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .img-container {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 20px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    .action-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .action-row button {
+      padding: 12px 24px;
+      background-color: hsl(176, 50%, 47%);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .bookmark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bookmark button {
+      background-color: hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 48%);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .stats div:not(:last-child) {
+      border-right: 1px solid #eee;
+      padding-right: 40px;
+    }
+
+    .stats h3 {
+      font-size: 24px;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background-color: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .progress-fill {
+      width: 89%;
+      height: 100%;
+      background-color: hsl(176, 50%, 47%);
+    }
+
+    .section {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .reward {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .reward h4 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+
+    .reward p {
+      text-align: left;
+      color: #777;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .reward-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .reward-footer button {
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      background-color: hsl(176, 50%, 47%);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .reward.out-of-stock {
+      opacity: 0.5;
+    }
+
+    .reward.out-of-stock button {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="Logo" />
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Get Started</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <!-- Top Card -->
+    <div class="card">
+      <div class="img-container">
+        <img src="./images/logo-mastercraft.svg" alt="Mastercraft" />
+      </div>
+      <h2>Mastercraft Bamboo Monitor Riser</h2>
+      <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+
+      <div class="action-row">
+        <button>Back this project</button>
+        <div class="bookmark">
+          <img src="./images/icon-bookmark.svg" alt="Bookmark" />
+          <button>Bookmark</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div>
+        <h3>$89,914</h3>
+        <p>of $100,000 backed</p>
+      </div>
+      <div>
+        <h3>5,007</h3>
+        <p>total backers</p>
+      </div>
+      <div>
+        <h3>56</h3>
+        <p>days left</p>
+      </div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+
+    <!-- About Section -->
+    <div class="section">
+      <h3>About this project</h3>
+      <p>
+        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more
+        comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make
+        you more comfortable while at work, helping you stay focused on the task at hand.
+      </p>
+      <p>
+        Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow
+        notepads, pens, and USB sticks to be stored under the stand.
+      </p>
+
+      <!-- Reward Options -->
+      <div class="reward">
+        <h4>Bamboo Stand <span>Pledge $25 or more</span></h4>
+        <p>You get an ergonomic stand made of natural bamboo. You’ll be added to a special Backer member list.</p>
+        <div class="reward-footer">
+          <span><strong>101</strong> left</span>
+          <button>Select Reward</button>
+        </div>
+      </div>
+
+      <div class="reward">
+        <h4>Black Edition Stand <span>Pledge $75 or more</span></h4>
+        <p>You get a Black Special Edition computer stand and a personal thank you. Shipping is included.</p>
+        <div class="reward-footer">
+          <span><strong>64</strong> left</span>
+          <button>Select Reward</button>
+        </div>
+      </div>
+
+      <div class="reward out-of-stock">
+        <h4>Mahogany Special Edition <span>Pledge $200 or more</span></h4>
+        <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. Shipping is included.</p>
+        <div class="reward-footer">
+          <span><strong>0</strong> left</span>
+          <button disabled>Out of Stock</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
