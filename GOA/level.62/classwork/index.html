@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .card{
+            background-color: white;
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            animation-name: fadein;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+        }
+        @keyframes fadein{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+                background-color: #1f1f11;
+                transform: scale(3) translateX(300px);
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    
+</body>
+</html>

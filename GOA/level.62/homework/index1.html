@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: black ;
+            animation-name: light;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2000ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes light{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                background-color: blue;
+                transform: scale(2);
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    
+</body>
+</html>

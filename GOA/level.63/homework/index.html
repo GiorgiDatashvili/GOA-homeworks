@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .row {
+        display: flex;
+        gap: 10px;
+      }
+
+      .box {
+        flex: 1;
+        height: 80px;
+      }
+
+      .blue {
+        background-color: #0077c2;
+      }
+      .orange {
+        background-color: #f7941e;
+        height: 100px;
+      }
+      .green {
+        background-color: #8dc63f;
+      }
+      .red {
+        background-color: #ed1c24;
+      }
+
+      @media (max-width: 768px) {
+        .row {
+          flex-wrap: wrap;
+        }
+
+        .row > .box {
+          flex: 1 1 100%;
+        }
+
+        .orange {
+          height: 80px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .row {
+          flex-direction: column;
+        }
+
+        .box {
+          flex: none;
+        }
+
+        .orange {
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="box blue"></div>
+        <div class="box blue"></div>
+      </div>
+
+      <div class="orange box"></div>
+
+      <div class="row">
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box green"></div>
+      </div>
+
+      <div class="row">
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+      </div>
+    </div>
+  </body>
+</html>
