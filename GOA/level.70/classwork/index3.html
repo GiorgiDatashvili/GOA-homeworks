@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #h {
+        text-align: center;
+      }
+      .center{
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h">Hello World</h1>
+    <div class="center">
+      <button id="text-align" onclick="ChangeText() ">Click me</button>
+    </div>
+    <script>
+      function ChangeText() {
+        let h1 = document.getElementById("h");
+        h1.innerText = "You Clicked the Button!";
+      }
+    </script>
+  </body>
+</html>
