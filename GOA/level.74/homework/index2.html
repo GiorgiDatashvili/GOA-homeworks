@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let grade = parseInt(prompt("What grade did you get on your test?"))
+        let answer = ""
+        if (grade >= 90){
+            answer = "Thats Excellent!!"
+        }
+        else if (grade >= 70 && grade < 90){
+            answer = "Thats Good!"
+        }
+        else if (grade >= 50 && grade < 70){
+            answer = "You passed the test."
+        }
+        else if (grade >= 0 && grade < 50){
+            answer = "You sadly didnt pass the test :("
+        }
+        alert(answer)
+    </script>
+</body>
+</html>

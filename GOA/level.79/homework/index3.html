@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Events</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    #clickBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="hover1"></div>
+  <div class="box" id="hover2"></div>
+
+  <button id="clickBtn">click</button>
+
+  <script>
+    document.getElementById('hover1').onmouseover = () => {
+      document.getElementById('hover1').style.backgroundColor = 'yellow';
+    };
+    document.getElementById('hover1').onmouseout = () => {
+      document.getElementById('hover1').style.backgroundColor = 'lightblue';
+    };
+
+    document.getElementById('hover2').onmouseover = () => {
+      document.getElementById('hover2').style.backgroundColor = 'pink';
+    };
+    document.getElementById('hover2').onmouseout = () => {
+      document.getElementById('hover2').style.backgroundColor = 'lightblue';
+    };
+    const btn = document.getElementById('clickBtn');
+    btn.onmousedown = () => {
+      btn.style.backgroundColor = 'red';
+    };
+    btn.onmouseup = () => {
+      btn.style.backgroundColor = 'green';
+    };
+  </script>
+</body>
+</html>

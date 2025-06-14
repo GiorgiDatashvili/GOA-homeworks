@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = prompt("Write your favorite word")
+        let length = text.length
+        let text_size = ""
+        if (length == 0){
+            text_size = "You didnt write anything :/"
+        }
+        else if (length > 1 && length <= 10){
+            text_size = "Thats a short word!"
+        }
+        else if (length > 10 && length <= 50){
+            text_size = "Thats a big word!"
+        }
+        else if (length > 50){
+            text_size = "WOW, Thats a very big word!"
+        }
+        alert(text_size)
+    </script>
+</body>
+</html>

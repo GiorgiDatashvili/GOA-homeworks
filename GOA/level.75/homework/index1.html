@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@keyframes growShrink {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+.animate-box {
+  width: 100px;
+  height: 100px;
+  background: crimson;
+  animation: growShrink 4s infinite;
+}
+
+.animate-box:hover {
+  animation-duration: 1s;
+}
+</style>
+
+
+</head>
+<body>
+    <div class="animate-box"></div>
+</body>
+</html>

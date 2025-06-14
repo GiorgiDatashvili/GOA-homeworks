@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temp = prompt("Whats the temperature in your country? (In Celcius)")
+        let answer = ""
+        if (temp <= 0){
+            answer = "Its freezing in your country"
+        }
+        if (temp > 0 && temp <= 15){
+            answer = "Its cold in your country"
+        }
+        if (temp > 15 && temp <= 30){
+            answer = "Its pretty warm in your country"
+        }
+        if (temp > 30){
+            answer = "Its really hot in your country"
+        }
+        alert(answer)
+    </script>
+</body>
+</html>

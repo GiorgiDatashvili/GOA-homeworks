@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(13, 131, 228);
+            border-radius: 20px;
+            border: 7px solid black;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+        const boxId = document.getElementById("box");
+        console.log(boxId)
+        const boxClass = document.getElementsByClassName("box");
+        console.log(boxClass[0])
+    </script>
+</body>
+</html>

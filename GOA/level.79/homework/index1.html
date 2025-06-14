@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrow Functions</title>
+</head>
+<body>
+  <button id="btn">დაკლიკე აქ</button>
+
+  <script>
+    const button = document.getElementById('btn');
+    const changeToLightBlue = () => {
+      document.body.style.backgroundColor = 'lightblue';
+    };
+    button.addEventListener('click', changeToLightBlue);
+    button.addEventListener('click', () => {
+      document.body.style.backgroundColor = 'lightgreen';
+    });
+    const getColorChanger = (color) => () => {
+      document.body.style.backgroundColor = color;
+    };
+    button.addEventListener('click', getColorChanger('lightcoral'));
+  </script>
+</body>
+</html>

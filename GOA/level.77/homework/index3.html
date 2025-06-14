@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr3 = ["a", "b", "c", "d", "e"];
+      let spliced3 = arr3.splice(1, 2); 
+      let sliced3 = spliced3.slice(1); 
+      sliced3.splice(1, 0, "x", "y"); 
+      console.log(arr3); 
+      console.log(spliced3);
+      console.log(sliced3); 
+    </script>
+  </body>
+</html>

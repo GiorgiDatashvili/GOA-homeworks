@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Listener-ის წაშლა</title>
+</head>
+<body>
+
+  <button id="changeColorBtn">შეცვალე ფერი</button>
+  <button id="removeListenerBtn">გათიშე ცვლილება</button>
+
+  <script>
+    const colorBtn = document.getElementById('changeColorBtn');
+    const removeBtn = document.getElementById('removeListenerBtn');
+    const changeBackground = () => {
+      document.body.style.backgroundColor = 'lightblue';
+    };
+    colorBtn.addEventListener('click', changeBackground);
+    removeBtn.addEventListener('click', () => {
+      colorBtn.removeEventListener('click', changeBackground);
+      alert('ღილაკის ფუნქცია გათიშულია');
+    });
+  </script>
+</body>
+</html>

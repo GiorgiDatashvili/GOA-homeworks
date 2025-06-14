@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Resize</title>
+  <style>
+    .resizable {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+      margin: 20px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="resizable" id="box1"></div>
+  <div class="resizable" id="box2"></div>
+
+  <script>
+    const boxes = document.querySelectorAll('.resizable');
+
+    boxes.forEach(box => {
+      box.onmouseover = () => {
+        box.style.width = '200px';
+        box.style.height = '200px';
+      };
+
+      box.onmouseout = () => {
+        box.style.width = '100px';
+        box.style.height = '100px';
+      };
+    });
+  </script>
+</body>
+</html>
