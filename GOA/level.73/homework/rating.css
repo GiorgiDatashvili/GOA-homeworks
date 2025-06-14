@@ -1,0 +1,14 @@
+body{
+    background: #1e1e1e;
+}
+.rating-container {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+}
+
+.rating-card {
+  background-color: #524747;
+  padding: 20px;
+  border-radius: 12px;
+}
