@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .section {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 599px) {
+      .section {
+        flex-basis: 100%;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 999px) {
+      .section {
+        flex-basis: 50%;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .section {
+        flex-basis: 33.33%;
+      }
+    }
+  </style>
+  <title>Responsive Layout</title>
+</head>
+<body>
+  <div class="container">
+    <div class="section">1</div>
+    <div class="section">2</div>
+    <div class="section">3</div>
+    <div class="section">4</div>
+  </div>
+</body>
+</html>

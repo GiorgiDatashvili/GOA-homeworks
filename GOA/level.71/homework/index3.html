@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .menu {
+      position: sticky;
+      top: 0;
+      background: #eee;
+      padding: 10px;
+    }
+
+    .context-btn {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .content {
+      height: 1500px;
+      padding: 20px;
+    }
+  </style>
+  <title>Position Example</title>
+</head>
+<body>
+  <div class="menu">menu (Sticky)</div>
+  <div class="content">
+    <button class="context-btn">button</button>
+    <p>content</p>
+  </div>
+  <button class="chat-btn">chat</button>
+</body>
+</html>

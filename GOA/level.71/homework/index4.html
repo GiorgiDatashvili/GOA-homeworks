@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .info { background: #f0f8ff; }
+    .projects { background: #e0ffff; }
+    .social { background: #f5f5dc; }
+
+    .projects img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+  <title>Portfolio Grid</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="info">
+      <h2>Information about me</h2>
+      <p>Name: giorgi<br>Profession:programmer</p>
+    </div>
+    <div class="projects">
+      <h2>Pictures</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh36FlP-AfYOlUY_T4DHWC_cUiuJzs5qZUdg&s" alt="Project 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSmatSr3THeYjp_SWNMu8UFfMQFQURGi87UQ&s" alt="Project 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6CUyuEAFnTcGgLBFINKI9rTmcFffLU3PwFw&s" alt="Project 3">
+    </div>
+    <div class="social">
+      <h2>Socials</h2>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

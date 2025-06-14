@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid{
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+            gap: 10px;
+        }
+        .grid img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media screen and (max-width: 1330px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;
+            }
+        @media screen and (max-width:768px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+            }
+        }
+        }   
+    </style>
+</head>
+<body>
+    <div class="center grid ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqbUP1PiGtwuKi2OvOpI5eCZb9BiPhpobMA&s" alt="tralala" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqbUP1PiGtwuKi2OvOpI5eCZb9BiPhpobMA&s" alt="tralala" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqbUP1PiGtwuKi2OvOpI5eCZb9BiPhpobMA&s" alt="tralala" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqbUP1PiGtwuKi2OvOpI5eCZb9BiPhpobMA&s" alt="tralala" >
+    </div>
+</body>
+</html>
