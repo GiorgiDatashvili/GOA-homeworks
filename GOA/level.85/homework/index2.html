@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const month = prompt(
+        "შეიყვანე შენი საყვარელი თვე (იანვარი, აპრილი, ივლისი, სექტემბერი, დეკემბერი)"
+      );
+
+      switch (month.toLowerCase()) {
+        case "იანვარი":
+          alert("ეს ზამთარია");
+          break;
+        case "აპრილი":
+          alert("ეს გაზაფხულია");
+          break;
+        case "ივლისი":
+          alert("ეს ზაფხულია");
+          break;
+        case "სექტემბერი":
+          alert("ეს შემოდგომაა");
+          break;
+        case "დეკემბერი":
+          alert("ეს ზამთარია");
+          break;
+        default:
+          alert("მხოლოდ მითითებული თვეებიდან აირჩიე");
+      }
+    </script>
+  </body>
+</html>

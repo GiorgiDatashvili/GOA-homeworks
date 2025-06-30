@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box-container {
+            border: 2px solid blueviolet;
+            max-width: 500px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button id="add">Add to do</button>
+    
+    <div class="box-container">
+    </div>
+
+    <script>
+        let arrToDo = [];
+        const inp = document.getElementById("inp");
+        const boxContainer = document.getElementsByClassName("box-container")[0];
+        const btnAdd = document.getElementById("add");
+
+        btnAdd.onclick  = () => {
+            const value = inp.value;
+            arrToDo.push(value);
+
+            boxContainer.innerHTML = "" 
+
+            arrToDo.forEach((item, index) => { 
+                const div = document.createElement("div");
+                div.textContent = item
+                boxContainer.append(div)
+            })
+        }
+        
+    </script>
+</body>
+
+</html>

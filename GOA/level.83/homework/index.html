@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-4 rounded-lg shadow-md w-full max-w-md">
+    <h1 class="text-xl font-bold text-center mb-4">📝 ჩემი To Do List</h1>
+
+
+    <div class="flex">
+      <input id="taskInput" type="text" placeholder="ჩაწერე დავალება"
+        class="flex-1 border border-gray-300 rounded-l px-3 py-2">
+      <button onclick="addTask()" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600">
+        დამატება
+      </button>
+    </div>
+
+    <ul id="taskList" class="mt-4 space-y-2"></ul>
+  </div>
+
+  <script>
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+
+    function addTask() {
+      const text = taskInput.value.trim();
+      if (text === '') return;
+
+      const li = document.createElement('li');
+      li.className = "flex justify-between items-center bg-gray-200 px-3 py-2 rounded";
+
+      const span = document.createElement('span');
+      span.textContent = text;
+      span.className = "cursor-pointer";
+      span.onclick = () => {
+        span.classList.toggle('line-through');
+        span.classList.toggle('text-gray-500');
+      };
+
+      const btn = document.createElement('button');
+      btn.textContent = "🗑️";
+      btn.className = "text-red-500 hover:text-red-700";
+      btn.onclick = () => li.remove();
+
+      li.appendChild(span);
+      li.appendChild(btn);
+      taskList.appendChild(li);
+      taskInput.value = '';
+    }
+
+
+    taskInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') addTask();
+    });
+  </script>
+
+</body>
+</html>

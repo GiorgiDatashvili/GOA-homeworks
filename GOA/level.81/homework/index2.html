@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="textContainer"></div>
+
+  <script>
+    const container = document.getElementById("textContainer");
+
+    const texts = [
+      "ეს არის <span style='color: red;'>წითელი</span> ტექსტი.",
+      "ეს არის <span style='font-size: 20px;'>დიდი</span> ტექსტი.",
+      "ეს არის <span style='color: green;'>მწვანე</span> სიტყვა წინადადებაში.",
+      "ეს არის <span style='font-weight: bold;'>მუქი</span> ნაწილი ტექსტში.",
+      "ეს არის <span style='text-decoration: underline;'>ხაზგასმული</span> სიტყვა."
+    ];
+
+    for (let i = 0; i < texts.length; i++) {
+      const p = document.createElement("p");
+      p.innerHTML = texts[i];
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>

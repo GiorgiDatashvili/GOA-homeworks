@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h2>რამდენი დღე დარჩა:</h2>
+
+    <p> ახალ წლამდე: <span id="newYear"></span></p>
+    <p> გიორგობამდე: <span id="giorgoba"></span></p>
+    <p> ბარბარობამდე: <span id="barbaroba"></span></p>
+
+    <script>
+      function countDaysLeft(futureDate) {
+        const today = new Date();          
+        const future = new Date(futureDate); 
+
+        const oneDay = 24 * 60 * 60 * 1000;
+        const difference = future - today; 
+
+        const days = Math.round(difference / oneDay);
+        return days;
+      }
+
+      const now = new Date();
+      const year = now.getFullYear();
+
+      const newYearDate = `${year + 1}-01-01`; 
+      const giorgobaDate = `${year}-11-23`;     
+      const barbarobaDate = `${year}-12-17`;    
+
+
+      document.getElementById("newYear").textContent = countDaysLeft(newYearDate) + " დღე";
+      document.getElementById("giorgoba").textContent = countDaysLeft(giorgobaDate) + " დღე";
+      document.getElementById("barbaroba").textContent = countDaysLeft(barbarobaDate) + " დღე";
+    </script>
+</body>
+</html>
