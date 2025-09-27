@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Human{
+            constructor(name,surname,age,email,phone,address){
+                this.name = name
+                this.surname = surname
+                this.age = age
+                this.email = email
+                this.phone = phone
+                this.address = address
+            }
+            saxeli(){
+                console.log(`Hello my name is ${this.name} and game count is`)
+            }
+            gvari(){
+                console.log(`My surname is ${this.surname}`)
+            }
+            wlovaneba(){
+                console.log(`I am ${this.age} years old`)
+            }
+            maili(){
+                console.log(`My email is ${this.email}`)
+            }
+            teleponi(){
+                console.log(`My phone number is ${this.phone}`)
+            }
+            misamarti(){
+                console.log(`My address is ${this.address}`)
+            }
+            get greet(){
+                console.log("Hello")
+            }
+            set greetBack(word){
+                console.log(word)
+            }
+            get checkAge(){
+                if (this.age >= 18){
+                    console.log("You are an adult")
+                }
+                else{
+                    console.log("You are a minor")
+                }
+            }
+        }
+        const newHuman = new Human("Giorgi","Datashvili",17,"example@gmail.com","911","Tbilisi")
+        newHuman.saxeli()
+        newHuman.gvari()
+        newHuman.wlovaneba()
+        newHuman.greet
+        newHuman.greetBack = "Hi"
+        newHuman.checkAge
+    </script>
+</body>
+</html>

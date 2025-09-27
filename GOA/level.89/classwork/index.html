@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Human{
+            constructor(name,surname,age){
+                this.name = name
+                this.surname = surname
+                this.age = age
+            }
+            saxeli(){
+                console.log(`Hello my name is ${this.name} and game count is`)
+            }
+            gvari(){
+                console.log(`My surname is ${this.surname}`)
+            }
+            wlovaneba(){
+                console.log(`I am ${this.age} years old`)
+            }
+            get greet(){
+                console.log("Hello")
+            }
+            set greetBack(word){
+                console.log(word)
+            }
+        }
+        const newHuman = new Human("Giorgi","Datashvili",17)
+        newHuman.saxeli()
+        newHuman.gvari()
+        newHuman.wlovaneba()
+        newHuman.greet
+        newHuman.greetBack = "Hi"
+    </script>
+</body>
+</html>

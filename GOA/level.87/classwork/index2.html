@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="font-bold text-center text-[50px]" id="txt">First Picture</h1>
+    <div
+      class="flex max-w-[1200px] mx-auto h-screen flex items-center justify-center"
+    >
+      <div class="flex h-[500px] w-full">
+        <button
+          onclick="handlePreviousSlider()"
+          class="h-full px-10 py-5 bg-gray-200 rounded-l-xl hover:bg-gray-300"
+        >
+          <
+        </button>
+
+        <img
+          class="w-full object-cover"
+          src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+          alt="photo"
+        />
+
+        <button
+          onclick="handleNextSlider()"
+          class="h-full px-10 py-5 bg-gray-200 rounded-r-xl hover:bg-gray-300"
+        >
+          >
+        </button>
+      </div>
+    </div>
+    <script>
+      let imgArray = [
+        "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg",
+        "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+        "https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=",
+      ];
+      function handleNextSlider() {
+        const img = document.querySelector("img");
+        const text = document.getElementById("txt");
+        text.textContent = "Second Picture";
+        img.src = imgArray[1];
+        console.log("next");
+      }
+
+      function handlePreviousSlider() {
+        const img = document.querySelector("img");
+        const text = document.getElementById("txt");
+        text.textContent = "Third picture";
+        img.src = imgArray[2];
+        console.log("previous");
+      }
+    </script>
+  </body>
+</html>
